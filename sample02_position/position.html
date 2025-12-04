@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+    /* 各要素にデフォルトで設定されている余白を除去 */
+    *,::before,::after {
+        padding: 0;
+        margin: 0;
+    }
+    /* relative指定 */
+    .div1 {
+        width: 200px;
+        height: 100px;
+        background-color: gold;
+        border: solid 1px black;
+        position: relative;
+        top: 500px;
+        left: 500px;
+    }
+    /* relative指定（親要素）*/
+    .div2 {
+        width: 200px;
+        height: 100px;
+        background-color: gold;
+        border: solid 1px black;
+        position: relative;
+    }
+    /* absolute指定（子要素）*/
+    .div3 {
+        width: 200px;
+        height: 1300px;
+        background-color: lightgray;
+        border: solid 1px black;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    /* fixed指定 */
+    .div4 {
+        width: 200px;
+        height: 100px;
+        background-color: orange;
+        border: solid 1px black;
+        position: fixed;
+        top: 270px;
+        left: 250px;
+        /* z-index: 2; */
+    }
+    /* sticky指定要素の親要素 */
+    .div5 {
+        width: 200px;
+        height: 900px;
+        background-color: gray;
+        border: solid 1px black;
+    }
+    /* sticky指定 */
+    .div6 {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        border: solid 1px black;
+        position: sticky;
+        top: 0;
+        /* z-index: 1; */
+    }
+    </style>
+</head>
+<body>
+
+    <div class="div1">
+        relative指定
+    </div>
+
+    <div class="div2">
+        relative指定（親要素）
+        <div class="div3">
+            absolute指定（子要素）
+        </div>
+    </div>
+
+    <div class="div4">
+        fixed指定
+    </div>
+
+
+    <div class="div5">
+        <div class="div6">
+            sticky指定
+        </div>
+    </div>
+
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    <p>ああああああああ</p>
+    -->
+</body>
+</html>
