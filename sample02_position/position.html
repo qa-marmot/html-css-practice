@@ -10,6 +10,9 @@
         padding: 0;
         margin: 0;
     }
+    body {
+        background: #000000;
+    }
     /* relative指定 */
     .div1 {
         width: 200px;
@@ -19,6 +22,7 @@
         position: relative;
         top: 500px;
         left: 500px;
+        z-index: -1;
     }
     /* relative指定（親要素）*/
     .div2 {
@@ -27,6 +31,7 @@
         background-color: gold;
         border: solid 1px black;
         position: relative;
+        z-index: 100;
     }
     /* absolute指定（子要素）*/
     .div3 {
@@ -37,6 +42,8 @@
         position: absolute;
         top: 50px;
         left: 50px;
+        z-index: 10;
+
     }
     /* fixed指定 */
     .div4 {
@@ -47,7 +54,7 @@
         position: fixed;
         top: 270px;
         left: 250px;
-        /* z-index: 2; */
+        z-index: 20;
     }
     /* sticky指定要素の親要素 */
     .div5 {
@@ -64,7 +71,7 @@
         border: solid 1px black;
         position: sticky;
         top: 0;
-        /* z-index: 1; */
+        z-index: 1000;
     }
     </style>
 </head>
