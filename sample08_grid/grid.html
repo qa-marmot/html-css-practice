@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridLayout</title>
+    <style>
+        /* グリッドコンテナ（親要素） */
+        .container {
+            display: grid;
+
+            background-color: lightgreen;
+            width: 452px;
+            height: 452px;
+
+            /* 行（2列） */
+            grid-template-rows: repeat(3, 150px);
+            /*grid-template-rows: repeat(2, 100px);*/
+            /*grid-template-rows: 1fr 1fr;*/
+
+            /* 列（3列） */
+            grid-template-columns: repeat(3, 150px) ;
+            /*grid-template-columns: repeat(3, 150px);*/
+            /*grid-template-columns: 1fr 1fr 3fr;*/
+
+            column-gap: 1px;  /* 列間 */
+            row-gap: 1px;  /* 行間*/
+        }
+
+        /* グリッドコンテナ（子要素） */
+        .item {
+            background-color: goldenrod;
+            border: solid 1px black;
+        }
+
+        #item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        #item2 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3; 
+        }
+
+        #item3 {
+            grid-row-start: 2;
+            grid-row-end: 4; 
+        }
+
+        #item5 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="item1" class="item">Item1</div>
+        <div id="item2" class="item">Item2</div>
+        <div id="item3" class="item">Item3</div>
+        <div id="item4" class="item">Item4</div>
+        <div id="item5" class="item">Item5</div>
+        <!-- <div id="item6" class="item">Item6</div> -->
+    </div>
+</body>
+</html>

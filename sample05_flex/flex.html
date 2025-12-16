@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBoxLayout</title>
+    <style>
+        *, ::before, ::after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* フレックスコンテナ（flex親要素） */
+        .flex-container {
+            display: flex;
+            background-color: blanchedalmond;
+            list-style: none;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-items: stretch;
+            height: 400px;
+        }
+        /* フレックスアイテム（flex子要素） */
+        .flex-item1 {
+            background-color: cadetblue;
+            width: 200px;
+            height: 200px;
+            border: solid black 1px;
+            margin: 1px;
+            /* order: 2; */
+            /* flex-basis: 100px; */
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+        .flex-item2 {
+            background-color: cadetblue;
+            width: 200px;
+            height: 200px;
+            border: solid black 1px;
+            margin: 1px;
+            /* order: 3; */
+            /* flex-basis: 40%; */
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .flex-item3 {
+            background-color: cadetblue;
+            width: 200px;
+            height: 200px;
+            border: solid black 1px;
+            margin: 1px;
+            /* order: 1; */
+            /* flex-basis: auto; */
+            flex-grow: 2;
+            flex-shrink: 2;
+        }
+        .flex-item4 {
+            background-color: cadetblue;
+            width: 200px;
+            height: 200px;
+            border: solid black 1px;
+            margin: 1px;
+            /* flex-basis: auto; */
+        }
+    </style>
+</head>
+<body>
+    <ul class="flex-container">
+        <li class="flex-item1">item1</li>
+        <li class="flex-item2">item2</li>
+        <li class="flex-item3">item3</li>
+        <li class="flex-item4">item4</li>
+        <!-- <li class="flex-item">item5</li> -->
+    </ul>
+</body>
+</html>
