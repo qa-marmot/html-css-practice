@@ -62,16 +62,23 @@
           <dt>お問い合わせ種別</dt>
           <dd>
             <select class="select-box" name="genre">
-              <option value="ご予約について">ご予約について</option>
+              <option value="ご予約について" selected>ご予約について</option>
               <option value="メニューについて">メニューについて</option>
               <option value="営業時間について">営業時間について</option>
             </select>
           </dd>
           <dt>お客様について</dt>
-          <dd></dd>
+          <dd>
+            <label class="radio-button"><input type="radio" name="user-type" value="一般のお客様" checked>一般のお客様</label>
+            <label class="radio-button"><input type="radio" name="user-type" value="お取引先様">お取引先様</label>
+            <label class="radio-button"><input type="radio" name="user-type" value="その他">その他</label>
+          </dd>
           <dt><span class="required">お問い合わせ内容</span></dt>
-          <dd></dd>
+          <dd><textarea name="message" class="message" required></textarea>
+          </dd>
         </dl>
+        <p class="confirm-text">ご入力内容をご確認の上、お間違いがなければ [Submit]ボタンを押してください。</p>
+        <button class="submit-button" type="submit">Submit</button>
       </form>
     </div>
   </main>
@@ -87,7 +94,7 @@
         <li><a href="./access.html">ACCESS</a></li>
       </ul>
     </nav>
-    <a class="footer-logo" href=".index.html">
+    <a class="footer-logo" href="index.html">
       <img src="../images/common/logo-footer.png" alt="KISSA" />
     </a>
     <p class="footer-tel">TEL 01-2345-6789</p>
